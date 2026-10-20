@@ -1,0 +1,14 @@
+[
+  {"id":"synthetic-01","question":"出差结束后要在多长时间内报销，需要哪些材料？","relevant_documents":["reimbursement.md"],"answer_contains":["10 个工作日","电子发票","付款凭证","出差审批单"],"unanswerable":false},
+  {"id":"synthetic-02","question":"上海和其他城市的住宿上限分别是多少？","relevant_documents":["reimbursement.md"],"answer_contains":["600","450"],"unanswerable":false},
+  {"id":"synthetic-03","question":"恰好 3000 元的费用需要财务负责人追加复核吗？","relevant_documents":["reimbursement.md"],"answer_contains":["不需要","3000"],"unanswerable":false},
+  {"id":"synthetic-04","question":"正式员工一年有多少天年假，申请应提前多久？","relevant_documents":["leave.md"],"answer_contains":["12 天","3 个工作日"],"unanswerable":false},
+  {"id":"synthetic-05","question":"连续请假 4 天需要谁审批？","relevant_documents":["leave.md"],"answer_contains":["直属负责人","部门负责人"],"unanswerable":false},
+  {"id":"synthetic-06","question":"项目发布的灰度流量比例和观察时间是多少，什么情况下回滚？","relevant_documents":["project_operations.md"],"answer_contains":["10%","30 分钟","1%","800 毫秒"],"unanswerable":false},
+  {"id":"synthetic-07","question":"P1 事故多久内响应，恢复后多久完成复盘？","relevant_documents":["project_operations.md"],"answer_contains":["10 分钟","2 个工作日"],"unanswerable":false},
+  {"id":"synthetic-08","question":"年假申请与生产发布申请分别需要提前多少个工作日？","relevant_documents":["leave.md","project_operations.md"],"answer_contains":["3 个工作日","1 个工作日"],"unanswerable":false},
+  {"id":"synthetic-09","question":"演示测试日志和项目交付文档分别保留多久？","relevant_documents":["data_security.md"],"answer_contains":["7 天","180 天"],"unanswerable":false},
+  {"id":"synthetic-10","question":"星河实验室员工的月薪是多少？","relevant_documents":[],"answer_contains":[],"unanswerable":true},
+  {"id":"synthetic-11","question":"星河实验室的法定代表人叫什么名字？","relevant_documents":[],"answer_contains":[],"unanswerable":true},
+  {"id":"synthetic-12","question":"2027 年报销住宿上限会提高到多少？","relevant_documents":[],"answer_contains":[],"unanswerable":true}
+]

@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-10-15",
+  "models": {
+    "generation": {
+      "repo": "unsloth/Qwen3.5-4B-GGUF",
+      "filename": "Qwen3.5-4B-Q4_K_M.gguf",
+      "upstream": "Qwen/Qwen3.5-4B",
+      "format": "GGUF Q4_K_M",
+      "publisher_note": "Unsloth quantization of Qwen's official model",
+      "size": 2740937888,
+      "sha256": "00fe7986ff5f6b463e62455821146049db6f9313603938a70800d1fb69ef11a4"
+    },
+    "embedding": {
+      "repo": "Qwen/Qwen3-Embedding-0.6B-GGUF",
+      "filename": "Qwen3-Embedding-0.6B-Q8_0.gguf",
+      "upstream": "Qwen/Qwen3-Embedding-0.6B",
+      "format": "GGUF Q8_0",
+      "dimensions": 1024,
+      "size": 639150592,
+      "sha256": "06507c7b42688469c4e7298b0a1e16deff06caf291cf0a5b278c308249c3e439"
+    }
+  },
+  "runtime": {
+    "version": "b11429",
+    "vulkan": {
+      "url": "https://github.com/ggml-org/llama.cpp/releases/download/b11429/llama-b11429-bin-win-vulkan-x64.zip",
+      "sha256": "1bfe78ad9168b79fa02bf67f6af9f5e17a966d824d77238517f7bef12ac73b36"
+    },
+    "cpu": {
+      "url": "https://github.com/ggml-org/llama.cpp/releases/download/b11429/llama-b11429-bin-win-cpu-x64.zip",
+      "sha256": "1283323272b04cd07905816a597a0da810918102de958f4ff6f7bbaa70ed2efe"
+    }
+  }
+}

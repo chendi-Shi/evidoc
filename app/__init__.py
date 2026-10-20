@@ -1,0 +1,1 @@
+"""Evidoc local document assistant."""

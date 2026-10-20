@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-10-20T02:23:46.206893+00:00",
+  "scope": "Integration smoke test on synthetic project documents; not a general accuracy benchmark.",
+  "model_info": {
+    "model": "Qwen3.5-2B + Evidoc LoRA",
+    "model_id": "Qwen/Qwen3.5-2B",
+    "adapter_run": "r16-hybrid-s43",
+    "adapter_sha256": "4ffdbb866ee0ccb94f46864fd3552c719c9412f354b0994c01cf67e91daf0542",
+    "validation_loss": 0.14072677493095398,
+    "device": "cuda:0",
+    "dtype": "bf16"
+  },
+  "passed": true,
+  "cases": [
+    {
+      "case": "empty_library",
+      "passed": true
+    },
+    {
+      "case": "synthetic_document_qa",
+      "question": "上海的住宿上限是多少？",
+      "expected_contains": "600",
+      "answer": "600 元/人/晚 [1]",
+      "answer_mode": "finetuned",
+      "citation_valid": true,
+      "model_identity_matches": true,
+      "timings": {
+        "retrieval_ms": 8.35,
+        "generation_ms": 4633.06,
+        "total_ms": 4641.42
+      },
+      "passed": true
+    },
+    {
+      "case": "synthetic_document_qa",
+      "question": "年假申请需要提前多少个工作日？",
+      "expected_contains": "3个工作日",
+      "answer": "3 个工作日 [1]",
+      "answer_mode": "finetuned",
+      "citation_valid": true,
+      "model_identity_matches": true,
+      "timings": {
+        "retrieval_ms": 9.34,
+        "generation_ms": 1848.06,
+        "total_ms": 1857.41
+      },
+      "passed": true
+    },
+    {
+      "case": "synthetic_document_qa",
+      "question": "P1事故需要在多长时间内响应？",
+      "expected_contains": "10分钟",
+      "answer": "10 分钟内 [1]",
+      "answer_mode": "finetuned",
+      "citation_valid": true,
+      "model_identity_matches": true,
+      "timings": {
+        "retrieval_ms": 6.09,
+        "generation_ms": 1590.85,
+        "total_ms": 1596.96
+      },
+      "passed": true
+    },
+    {
+      "case": "adapter_offline_fallback",
+      "passed": true
+    },
+    {
+      "case": "delete_documents",
+      "passed": true
+    }
+  ]
+}

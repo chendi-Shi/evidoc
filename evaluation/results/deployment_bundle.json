@@ -1,0 +1,19 @@
+{
+  "asset": "evidoc-adapter.zip",
+  "release": "v0.1.0",
+  "bytes": 24948337,
+  "sha256": "b1b8bf786ca229a945c3d3f1c2a6b080c34a06a902a3c6d0a145448e1b54cae4",
+  "adapter_run": "r16-hybrid-s43",
+  "checkpoint_step": 400,
+  "adapter_sha256": "4ffdbb866ee0ccb94f46864fd3552c719c9412f354b0994c01cf67e91daf0542",
+  "selection": "lowest validation loss across completed runs; test scores not used",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "base_revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "contents": [
+    "adapter_model.safetensors",
+    "adapter_config.json",
+    "deployment_manifest.json",
+    "LICENSE",
+    "NOTICE"
+  ]
+}

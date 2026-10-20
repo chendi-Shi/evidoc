@@ -1,0 +1,14 @@
+# Install the CUDA 11.8 PyTorch wheel first, using the official CUDA index:
+# python -m pip install torch==2.7.1+cu118 --index-url https://download.pytorch.org/whl/cu118
+# This exact build passed the local RTX 3060 Ti GPU probe with the existing driver.
+# Keep torch pinned; do not let an optional package silently replace the CUDA runtime.
+torch==2.7.1+cu118
+transformers==5.8.1
+peft==0.21.2
+accelerate==1.15.0
+safetensors==0.8.0
+huggingface-hub==1.33.0
+pyarrow==19.0.1
+# Optional alternatives (not required by the default native BF16 LoRA pipeline):
+# datasets: only for prepare_data --source hf
+# bitsandbytes: only for train/evaluate --quantization nf4; experimental on Qwen3.5

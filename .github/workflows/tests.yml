@@ -1,0 +1,33 @@
+name: CPU tests
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 10
+    env:
+      PYTHONUTF8: '1'
+      HF_HUB_OFFLINE: '1'
+      TRANSFORMERS_OFFLINE: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - name: Install application and test dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Verify CPU-only test environment
+        run: python -c "import importlib.util; assert importlib.util.find_spec('torch') is None"
+      - name: Run tests without models or downloaded data
+        run: python -m pytest -q

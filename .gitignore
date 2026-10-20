@@ -1,0 +1,47 @@
+# Local runtimes and build/test state
+.venv/
+.tools/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Runtime reports can contain local paths, PIDs and private source documents.
+runtime/
+reports/
+*.log
+*.zip
+*.sqlite*
+*.db
+
+# Only the original fictional demo documents belong in source control.
+data/*
+!data/demo/
+
+# Downloaded weights, adapters, optimizer states and training data stay local.
+models/*
+!models/manifest.json
+runs/
+*.safetensors
+*.gguf*
+*.pt
+*.pth
+*.bin
+*.parquet
+*.part
+
+# OS/editor temporary files
+.DS_Store
+Thumbs.db
+*.swp

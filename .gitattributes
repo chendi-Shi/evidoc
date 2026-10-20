@@ -1,0 +1,4 @@
+* text=auto
+docs/licenses/Qwen3.5-LICENSE.txt -text
+*.jpg binary
+*.png binary

@@ -1,0 +1,17 @@
+{
+  "checked_at_utc": "2026-10-20T02:36:11.304312+00:00",
+  "cpu_test_count": 93,
+  "cpu_tests_passed": true,
+  "clean_source_tests_passed": true,
+  "clean_source_api_checks": {
+    "home": 200,
+    "demo_documents": 4,
+    "offline_answer_mode": "extractive",
+    "published_experiment_runs": 9,
+    "training_status": "published",
+    "torch_imported": false
+  },
+  "gpu_integration": "passed; see delivery_smoke.json and bundle_delivery_smoke.json",
+  "publication_scope": "source code, fictional demonstration data, aggregate experiment results, synthetic integration evidence; no user library or raw training/evaluation records",
+  "remote_ci": "checked separately in GitHub Actions"
+}
